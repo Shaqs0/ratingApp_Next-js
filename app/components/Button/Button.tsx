@@ -15,7 +15,6 @@ export function Button ({ appearance, arrow = 'none', children, className, ...pr
 				[styles.right]: arrow == 'rigth'
 			})}>
 				<img src='/arrow.svg'></img>
-				d
 			</span>}
 		</button>
 	);

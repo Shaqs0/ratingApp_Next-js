@@ -1,4 +1,5 @@
-import { Button, Htag } from './components';
+import { Button, Htag, P } from './components';
+
 
 
 export default function Home() {
@@ -7,6 +8,7 @@ export default function Home() {
 			<Htag tag="h1">Текст</Htag>
 			<Button appearance='primary' arrow='right'>Кнопка</Button>
 			<Button appearance='ghost'>Кнопка</Button>
+			<P size='m'>АУЕ</P>
 		</div>
 	);
 }

@@ -1,16 +1,17 @@
 'use client';
 
 import { useState } from 'react';
-import { Button, Htag, P, Rating, Tag } from './components';
+import { Button, Htag, P, Rating, Tag } from '../components';
+import styles from './page.module.css';
 
 
 
 export default function Home() {
-	const [rating, setRating] = useState<number>(4);
+	const [rating, setRating] = useState<number>(4); 
 
 
 	return (
-		<>
+		<div className={styles.content}>
 			<Htag tag='h1'>Заголовок</Htag>
 			<Button appearance='primary' arrow='right'>Кнопка</Button>
 			<Button appearance='ghost' arrow='down'>Кнопка</Button>
@@ -22,6 +23,6 @@ export default function Home() {
 			<Tag size='s' color='green'>Green</Tag>
 			<Tag color='primary'>Green</Tag>
 			<Rating rating={rating} isEditable={true} setRating={setRating} />
-		</>
+		</div>
 	);
 }

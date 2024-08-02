@@ -11,7 +11,7 @@ export default function Home() {
 
 
 	return (
-		<div className={styles.content}>
+		<div>
 			<Htag tag='h1'>Заголовок</Htag>
 			<Button appearance='primary' arrow='right'>Кнопка</Button>
 			<Button appearance='ghost' arrow='down'>Кнопка</Button>
